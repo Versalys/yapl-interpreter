@@ -1,0 +1,14 @@
+def my_func(int:x) -> int:
+    if x > 0 then
+       println {"This will recur again..."}
+       println{"X value: ", x}
+       return my_func(x-1)
+    end
+    return 5000
+end
+
+println {"This program demonstrates recursion.\nInput a number for the number of recursions:"}
+int x = input_int
+int z = my_func(x)
+
+println{z}
